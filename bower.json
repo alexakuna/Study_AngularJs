@@ -1,0 +1,21 @@
+{
+  "name": "Angular",
+  "authors": [
+    "Alexandr Ischenko <alexxjc@gmail.com>"
+  ],
+  "description": "Learned Angular",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.6",
+    "bootstrap": "^3.3.6"
+  }
+}

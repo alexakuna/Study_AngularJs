@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    
+
+}
+.wrap {
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    
+}
+.wrap input, button {
+    height: 35px;
+    margin-bottom: 50px;
+}
+button {
+    text-transform: uppercase;
+}
+h1 {
+    color: #ffffff;
+}
