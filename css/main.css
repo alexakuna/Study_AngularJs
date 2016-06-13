@@ -5,12 +5,18 @@ body {
     
 
 }
-.wrap {
+.wrap{
     background: tomato;
     display: flex;
     flex-direction: column;
     
 }
+.wrap.ng-valid {
+    background: yellow;
+    
+    
+}
+
 .wrap input, button {
     height: 35px;
     margin-bottom: 50px;
