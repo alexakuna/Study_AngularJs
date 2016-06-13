@@ -2,8 +2,12 @@ body {
     display: flex;
     -ms-align-items: center;
     align-items: center;
+    flex-direction: column;
     
 
+}
+.panel {
+    width: 100%;
 }
 .wrap{
     background: tomato;
@@ -11,11 +15,7 @@ body {
     flex-direction: column;
     
 }
-.wrap.ng-valid {
-    background: yellow;
-    
-    
-}
+
 
 .wrap input, button {
     height: 35px;
