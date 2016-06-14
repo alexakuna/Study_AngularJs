@@ -25,14 +25,13 @@ myAngularApp.controller('messageCtrl', function ($scope) {
 	};
 
 	$scope.deleteTask = function (course) {
+
 			var index = $scope.data.courses.indexOf(course);
 				$scope.data.courses.splice(index, 1);
-		
-		//console.log(index)
 	}
 
 	$scope.addTaskKey = function (event) {
-		if(event.key === 'Enter') {
+		if(event.key === 'Enter' && $scope.dataTask !== '') {
 			$scope.data.courses.push({
 				name: $scope.dataTask,
 				passed: false
@@ -43,14 +42,15 @@ myAngularApp.controller('messageCtrl', function ($scope) {
 	}
 
 	$scope.addTask = function () {
-		
-				$scope.data.courses.push({
+		if($scope.dataTask !== '') {
+			$scope.data.courses.push({
 				name: $scope.dataTask,
 				passed: false
 			});
-	
+		}
 		$scope.dataTask = '';
 	}
+
 	$scope.showText = function (passed) {
     return passed ? "Да" : "Нет";
   }
