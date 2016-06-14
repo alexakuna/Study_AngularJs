@@ -24,9 +24,11 @@ myAngularApp.controller('messageCtrl', function ($scope) {
 		$scope.text = '';
 	};
 
-	$scope.deleteTask = function (event) {
-		//$scope.data.courses.pop();
-		console.log(event)
+	$scope.deleteTask = function (course) {
+			var index = $scope.data.courses.indexOf(course);
+				$scope.data.courses.splice(index, 1);
+		
+		//console.log(index)
 	}
 
 	$scope.addTaskKey = function (event) {
