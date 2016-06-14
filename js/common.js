@@ -24,6 +24,22 @@ myAngularApp.controller('messageCtrl', function ($scope) {
 		$scope.text = '';
 	};
 
+	$scope.deleteTask = function (event) {
+		//$scope.data.courses.pop();
+		console.log(event)
+	}
+
+	$scope.addTaskKey = function (event) {
+		if(event.key === 'Enter') {
+			$scope.data.courses.push({
+				name: $scope.dataTask,
+				passed: false
+			});
+			$scope.dataTask = '';
+		}
+		
+	}
+
 	$scope.addTask = function () {
 		
 				$scope.data.courses.push({
